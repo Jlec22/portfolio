@@ -1,0 +1,22 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 16px;
+  justify-items: center;
+  align-items: center;
+}
+
+.gallery__item {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__item img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  object-fit: contain;
+}

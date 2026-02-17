@@ -1,0 +1,44 @@
+.scroll-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 40px;
+
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+  transition: all 0.25s ease;
+}
+
+.scroll-text {
+  transition: color 0.25s ease;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(45deg);
+  transition: all 0.25s ease;
+}
+
+.scroll-button:hover {
+  transform: translateY(4px) scale(1.05);
+}
+
+.scroll-button:hover .scroll-text {
+  color: #64ffda;
+}
+
+.scroll-button:hover .arrow {
+  border-color: #64ffda;
+  transform: rotate(45deg) translateY(6px);
+}
